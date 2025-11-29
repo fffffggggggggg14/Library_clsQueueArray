@@ -1,3 +1,5 @@
+# clsQueueArray <a href=""><img align="right" src="https://img.shields.io/badge/C++-17-blue.svg?style=flat-square" alt="C++17"></a>
+
 **A modern, efficient, and easy-to-understand generic Queue implementation in C++ using `clsDynamicArray` as the underlying container.**
 
 Ideal for:
