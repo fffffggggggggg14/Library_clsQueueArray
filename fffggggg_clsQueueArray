@@ -1,0 +1,72 @@
+#pragma once
+
+#include <iostream>
+#include "clsDynamicArray.h"
+using namespace std;
+
+template <class t_c>
+class clsQueueArray {
+
+    protected:
+        clsDynamicArray <t_c> _arr;
+
+    public:
+        void push(t_c data){
+            _arr.insert_last(data);
+        }
+
+        void print(void){
+            _arr.print();
+        }
+
+        void pop(void){
+            _arr.del_first();
+        }
+
+        int size(void){
+            return _arr.len();
+        }
+
+        t_c front(void){
+            return _arr.get(0);
+        }
+
+        t_c back(void){
+            return _arr.get(-1);
+        }
+
+        bool empty(void){
+            return _arr.empty();
+        }
+
+        t_c get(int index){
+            return _arr.get(index);
+        }
+
+        void reverse(void){
+            _arr.reverse();
+        }
+
+
+        void update(int index, t_c data){
+            _arr.set(index, data);
+        }
+
+        void insert_after(int index, t_c data){
+            _arr.insert_after(index, data);
+        }
+
+        void insert_front(t_c data){
+            _arr.insert_beginning(data);
+        }
+
+        void insert_back(t_c data){
+            _arr.insert_last(data);
+        }
+
+        void cls(void){
+            _arr.cls();
+        }
+
+
+};
